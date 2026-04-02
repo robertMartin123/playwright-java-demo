@@ -2,6 +2,8 @@
 
 
 # 🚀 Playwright Java Automation Demo
+# 🚀 Automated end-to-end test using Java + Playwright with CI integration (GitHub Actions)
+
 
 This project demonstrates a simple yet professional QA automation setup using **Java + Playwright** with a **Page Object Model (POM)** design.
 
