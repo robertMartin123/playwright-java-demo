@@ -9,8 +9,10 @@ public class LoginTest {
 
         Playwright playwright = Playwright.create();
 
+        boolean isCI = System.getenv("CI") != null;
+
         Browser browser = playwright.chromium().launch(
-                new BrowserType.LaunchOptions().setHeadless(false)
+            new BrowserType.LaunchOptions().setHeadless(isCI)
         );
 
         Page page = browser.newPage();
