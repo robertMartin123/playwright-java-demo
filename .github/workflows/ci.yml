@@ -1,4 +1,4 @@
-name: Run Playwright Test
+name: Playwright Tests
 
 on:
   push:
@@ -18,18 +18,16 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Build project
         run: mvn clean install
-        
-        - name: Setup Node
-  		uses: actions/setup-node@v4
-  		with:
-    		node-version: '18'
-        
 
-     - name: Install Playwright browsers
+      - name: Install Playwright browsers
         run: npx playwright install
-
 
       - name: Run test
         run: mvn exec:java -Dexec.mainClass=tests.LoginTest
