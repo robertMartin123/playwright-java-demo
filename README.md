@@ -1,3 +1,6 @@
+![Playwright Tests](https://github.com/robertmartin123/playwright-java-demo/actions/workflows/ci.yml/badge.svg)
+
+
 # 🚀 Playwright Java Automation Demo
 
 This project demonstrates a simple yet professional QA automation setup using **Java + Playwright** with a **Page Object Model (POM)** design.
